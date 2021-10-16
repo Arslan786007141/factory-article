@@ -6,7 +6,7 @@ const create = async ({ body }) => {
 
     const data = await ARTICLES_MODEL.create(reqData);
     if (data) {
-      return { type: "success", message: `Article created successfully`, data };
+      return { type: "success", message: `Article created successfully!`, data };
     } else {
       return { type: "bad", message: `Article already exist!` };
     }

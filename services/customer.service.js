@@ -9,7 +9,7 @@ const create = async ({ body }) => {
       const data = await CUSTOMERS_MODEL.create(reqData);
       return {
         type: "success",
-        message: `${data.name.toUpperCase()} is created successfully`,
+        message: `${data.name.toUpperCase()} is created successfully!`,
         data,
       };
     }

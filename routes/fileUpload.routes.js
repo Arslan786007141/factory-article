@@ -13,7 +13,8 @@ const storeSingleFile = (the_file) => new Promise((resolve, reject) => {
             reject(err);
         }
         // resolve({ fileName, uniqueFileName, accessPath: `http://${process.env.IP}:${process.env.PORT}/${uniqueFileName}.${fileName}` });
-        resolve({ fileName, uniqueFileName, accessPath: `http://18.118.113.4:11000/${uniqueFileName}.${fileName}` });
+      //  resolve({ fileName, uniqueFileName, accessPath: `http://192.168.1.16:11000/${uniqueFileName}.${fileName}` });
+        resolve({ fileName, uniqueFileName, accessPath: `http://localhost:11000/${uniqueFileName}.${fileName}` });
     });
 })
 

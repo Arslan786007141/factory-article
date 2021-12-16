@@ -11,10 +11,12 @@ const articlesSchema = new mongoose.Schema({
     required: true,
   },
   productImage: {
-    type: String,
+    data: Buffer,
+    contentType: String
   },
   techPackImage: {
-    type: String,
+    data: Buffer,
+    contentType: String
   },
   styleNumber: {
     type: Number,

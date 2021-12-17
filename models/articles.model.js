@@ -14,6 +14,7 @@ const articlesSchema = new mongoose.Schema({
     data: Buffer,
     contentType: String
   },
+  
   techPackImage: {
     data: Buffer,
     contentType: String
